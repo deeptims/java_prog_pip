@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
            
                 sh 'mvn test'
-          
+        }
             stage('POst'){
                     junit 'target/surefire-reports/*.xml'
                 }
